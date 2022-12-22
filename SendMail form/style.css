@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Monda&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(145deg, #367ab5, #2d6798);
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    min-height: 100vh;
+    color: white;
+}
+
+.container {
+   width: 30%;
+   border-radius: 32px;
+   background: linear-gradient(145deg, #367ab5, #2d6798);
+   box-shadow:  12px 12px 24px #2d6798,
+   -12px -12px 24px #377dba;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.group {
+    width: 90%;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    font-family: Poppins;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    margin: 20px;
+    width: 90%;
+    border: none;
+    border-radius: 32px;
+    border-radius: 32px;
+    background: linear-gradient(145deg, #367ab5, #2d6798);
+    box-shadow:  12px 12px 24px #2d6798,
+    -12px -12px 24px #377dba;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    padding: 15px;
+    margin: 20px;
+    width: 90%;
+    border: none;
+    border-radius: 32px;
+    background: linear-gradient(145deg, #2d6798, #367ab5);
+    box-shadow:  12px 12px 24px #2d6798,
+    -12px -12px 24px #377dba;
+    color: #f3f3f3;
+    cursor: pointer;
+}
+
+input:focus,
+textarea:focus {
+    border-bottom: 1px solid rgba(255, 38, 0, 0.747);
+}
+
+#message {
+    margin: 50px 0;
+}
+
+.message-success {
+    padding: 10px 20px;
+    background-color: chartreuse;
+    color: brown;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    animation: message 4s ease forwards;
+}
+
+.message-fail {
+    padding: 10px 20px;
+    background-color: rgb(204, 17, 17);
+    color: rgb(255, 255, 255);
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    animation: message 4s ease forwards;
+}
+
+@keyframes message {
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Multistep form </title>
+</head>
+<body>
+    <section>
+        <div class="container bottom">
+            <h2>Please, create your account: </h2>
+        </div>
+        <div class="container">
+            <form>
+                <div class="step step-1 active">
+                    <div class="form-group">
+                        <label for="first-name">First name *</label>
+                        <input type="text" name="firstName" id="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last name *</label>
+                        <input type="text" name="lastName" id="last-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nick-name">Nickname</label>
+                        <input type="text" name="nickName" id="nick-name">
+                    </div>
+                    <div class="buttons-wrapper first">
+                        <button type="button" class="next-btn"> Next </button>
+                    </div>
+                </div>
+
+                <div class="step step-2">
+                    <div class="form-group">
+                        <label for="email">Your email *</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Your phone</label>
+                        <input type="number" name="phone-number" id="phone">
+                    </div>
+                    <div class="buttons-wrapper">
+                        <button type="button" class="previous-btn"> Previous </button>
+                        <button type="button" class="next-btn"> Next </button>
+                    </div>
+                </div>
+                <div class="step step3">
+                    <div class="form-group">
+                        <label for="country">Country *</label>
+                        <input type="text" name="country-name" id="country" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City *</label>
+                        <input type="text" name="city-name" id="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="post-code">Post code</label>
+                        <input type="text" name="post-code" id="post-code">
+                    </div>
+                    <div class="buttons-wrapper">
+                        <button type="button" class="previous-btn"> Previous </button>
+                        <button type="submit" class="next-btn"> Submit </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="progress">
+            <div class="round active-step">1</div>
+            <div class="long"></div>
+            <div class="long"></div>
+            <div class="round">2</div>
+            <div class="long"></div>
+            <div class="long"></div>
+            <div class="round">3</div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

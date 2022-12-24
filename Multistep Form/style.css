@@ -35,6 +35,10 @@ section {
     margin-bottom: 100px;
 }
 
+.form-container {
+    height: 400px;
+}
+
 form {
     width: 100%;
 }
@@ -67,6 +71,14 @@ input:focus {
     border-bottom: 1px solid brown;
 }
 
+select {
+    border: 1px solid #f1f1f1;
+    padding: 10px;
+    font-size: 15px;
+    color: brown;
+    width: 90%;
+}
+
 .progress {
     width: 40%;
     display: flex;
@@ -77,7 +89,9 @@ input:focus {
     margin-top: 50px;
 }
 
-.round {
+.round-1,
+.round-2,
+.round-3 {
     display: flex;
     align-items: center;
     justify-content: center;

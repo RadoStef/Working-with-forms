@@ -9,10 +9,11 @@
 </head>
 <body>
     <section>
-        <div class="container bottom">
+        <div class="container bottom" id="info">
             <h2>Please, create your account: </h2>
+            <p id="display-info"></p>
         </div>
-        <div class="container">
+        <div class="container form-container">
             <form>
                 <div class="step step-1 active">
                     <div class="form-group">
@@ -28,7 +29,7 @@
                         <input type="text" name="nickName" id="nick-name">
                     </div>
                     <div class="buttons-wrapper first">
-                        <button type="button" class="next-btn"> Next </button>
+                        <button type="button" class="next-btn" id="next-1"> Next </button>
                     </div>
                 </div>
 
@@ -38,18 +39,25 @@
                         <input type="email" name="email" id="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="phone">Your phone</label>
+                        <label for="phone">Your phone * (10 digits)</label>
                         <input type="number" name="phone-number" id="phone">
                     </div>
                     <div class="buttons-wrapper">
-                        <button type="button" class="previous-btn"> Previous </button>
-                        <button type="button" class="next-btn"> Next </button>
+                        <button type="button" class="previous-btn" id="previous-1"> Previous </button>
+                        <button type="button" class="next-btn" id="next-2"> Next </button>
                     </div>
                 </div>
-                <div class="step step3">
+                <div class="step step-3">
                     <div class="form-group">
                         <label for="country">Country *</label>
-                        <input type="text" name="country-name" id="country" required>
+                        <select name="country-name" id="country" required>
+                            <option value="Bulgaria">
+                                Bulgaria
+                            </option>
+                            <option value="Poland">
+                                Poland
+                            </option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="city">City *</label>
@@ -60,20 +68,20 @@
                         <input type="text" name="post-code" id="post-code">
                     </div>
                     <div class="buttons-wrapper">
-                        <button type="button" class="previous-btn"> Previous </button>
-                        <button type="submit" class="next-btn"> Submit </button>
+                        <button type="button" class="previous-btn" id="previous-2"> Previous </button>
+                        <button type="submit" class="next-btn" id="submit"> Submit </button>
                     </div>
                 </div>
             </form>
         </div>
         <div class="progress">
-            <div class="round active-step">1</div>
+            <div class="round-1 active-step">1</div>
             <div class="long"></div>
             <div class="long"></div>
-            <div class="round">2</div>
+            <div class="round-2">2</div>
             <div class="long"></div>
             <div class="long"></div>
-            <div class="round">3</div>
+            <div class="round-3">3</div>
         </div>
     </section>
     <script src="main.js"></script>

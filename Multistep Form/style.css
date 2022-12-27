@@ -158,3 +158,11 @@ button:hover {
 .first {
     justify-content: flex-end;
 }
+
+li {
+    padding: 10px 0 10px 10px;
+}
+
+.refresh {
+    width: 300px;
+}

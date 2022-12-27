@@ -11,10 +11,10 @@
     <section>
         <div class="container bottom" id="info">
             <h2>Please, create your account: </h2>
-            <p id="display-info"></p>
+            <p id="error-info" style="color: red;"></p>
         </div>
-        <div class="container form-container">
-            <form>
+        <div class="container form-container" id="whole-form">
+            <form id="form">
                 <div class="step step-1 active">
                     <div class="form-group">
                         <label for="first-name">First name *</label>
@@ -82,6 +82,21 @@
             <div class="long"></div>
             <div class="long"></div>
             <div class="round-3">3</div>
+        </div>
+        <div id="result" class="container step">
+            <ul>
+                <li id="username"></li>
+                <li id="userlastname"></li>
+                <li id="usernickname"></li>
+                <li id="useremail"></li>
+                <li id="userphonenumber"></li>
+                <li id="usercountry"></li>
+                <li id="usercity"></li>
+                <li id="userpostcode"></li>
+            </ul>
+        </div>
+        <div>
+            <button id="refresh" class="step next-btn refresh"> Refresh </button>
         </div>
     </section>
     <script src="main.js"></script>
